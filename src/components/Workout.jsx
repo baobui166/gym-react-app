@@ -1,4 +1,4 @@
-function Workout() {
+function Workout({ workout }) {
   return <div>workout</div>;
 }
 
