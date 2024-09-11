@@ -25,6 +25,7 @@ function Generator({
   setMuscles,
   goals,
   setGoals,
+  updateWorkout,
 }) {
   const [showModel, setShowModel] = useState(false);
 
@@ -65,6 +66,7 @@ function Generator({
     <SectionWrapper
       header={"generate your workout"}
       title={['It"s', "Huge", "o'clock"]}
+      id={"generate"}
     >
       <Header
         index={"01"}
@@ -153,7 +155,7 @@ function Generator({
           );
         })}
       </div>
-      <Button text={"Formulate"}></Button>
+      <Button func={updateWorkout} text={"Formulate"}></Button>
     </SectionWrapper>
   );
 }
